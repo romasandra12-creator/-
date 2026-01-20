@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Весільна Хроніка: Андрій та Олександра</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;1,400&family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <span>Видання № 1</span>
+        <span>Субота 14.08.2026 Року</span>
+    </header>
+
+    <main class="paper-container">
+        
+        <section class="hero text-center" data-aos="fade-in">
+            <h2>Весільна Хроніка</h2>
+            <div class="line"></div>
+            <h1 class="names">АНДРІЙ ТА ОЛЕКСАНДРА</h1>
+            <p class="subtitle">ОДРУЖУЮТЬСЯ</p>
+            
+            <div class="hero-image-wrapper">
+                <img src="hero.jpg" alt="Молодята" class="main-img">
+                <span class="handwritten-accent top-right">не пройшло і 10 років</span>
+            </div>
+        </section>
+
+        <section class="intro-grid">
+            <div class="intro-img" data-aos="fade-right">
+                <img src="intro.jpg" alt="Save the Date">
+            </div>
+            <div class="intro-text" data-aos="fade-left">
+                <h3>ДОРОГІ ГОСТІ</h3>
+                <p>У цей особливий день ми мріємо бути в оточенні найрідніших. Запрошуємо вас розділити з нами день народження нашої родини!</p>
+                
+                <div class="location-box">
+                    <h3>ЛОКАЦІЯ</h3>
+                    <p>м. Світязь, провулок Монастирський 6,</p>
+                    <p><b>Готель Calypso</b></p>
+                    <a href="https://www.google.com/maps/place/Calypso+Residence+Svityaz/@51.4882808,23.851639,17z/data=!3m1!4b1!4m6!3m5!1s0x4723e57479293bab:0x6453137f379b32b7!8m2!3d51.4882808!4d23.8542086!16s%2Fg%2F11rc47zcbm?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-outline">Відкрити карту</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="countdown-section" data-aos="zoom-in">
+            <div class="overlay"></div>
+            <img src="countdown.jpg" class="bg-img" alt="Фон таймера">
+            <div class="countdown-content">
+                <p>До весілля залишилось</p>
+                <div id="timer">
+                    <div><span id="days">00</span>день</div>
+                    <div><span id="hours">00</span>година</div>
+                    <div><span id="minutes">00</span>хвилин</div>
+                    <div><span id="seconds">00</span>секунд</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section" data-aos="fade-up">
+            <h3>ПРОГРАМА ДНЯ</h3>
+            <span class="handwritten-accent left-side">це буде незабутньо</span>
+            
+            <div class="timeline">
+                <div class="event">
+                    <div class="time-icon">
+                        <div class="icon">📍</div>
+                        <span>14:30</span>
+                    </div>
+                    <div class="info">
+                        <h4>ЗБІР ГОСТЕЙ</h4>
+                        <p>Гості збираються у парковій зоні біля місця церемонії.</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="time-icon">
+                        <div class="icon">🥂</div>
+                        <span>15:00</span>
+                    </div>
+                    <div class="info">
+                        <h4>ЦЕРЕМОНІЯ ОДРУЖЕННЯ</h4>
+                        <p>Момент, на який ми всі чекали!</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="time-icon">
+                        <div class="icon">🍽️</div>
+                        <span>17:00</span>
+                    </div>
+                    <div class="info">
+                        <h4>БАНКЕТ</h4>
+                        <p>На вас чекатимуть смачні страви та веселощі.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dresscode-grid">
+            <div class="dress-img" data-aos="fade-right">
+                <img src="dresscode.jpg" alt="Аксесуари">
+            </div>
+            <div class="dress-text" data-aos="fade-left">
+                <h3>ДРЕС КОД</h3>
+                <p>Будемо вдячні, якщо ви оберете вбрання у пастельних відтінках.</p>
+                <div class="palette">
+                    <span style="background:#fff; border:1px solid #ccc"></span>
+                    <span style="background:#f0e6dd"></span>
+                    <span style="background:#cbbaw9"></span>
+                    <span style="background:#a68e76"></span>
+                    <span style="background:#4a3b32"></span>
+                    <span style="background:#000"></span>
+                </div>
+                <span class="handwritten-accent bottom-right">обирайте зручне взуття</span>
+            </div>
+        </section>
+
+        <section class="organizer" data-aos="fade-up">
+            <img src="organizer.jpg" alt="Організатор" class="org-banner">
+            <div class="org-box">
+                <h3>ОРГАНІЗАТОР</h3>
+                <p>Якщо у вас виникнуть питання, звертайтеся до нашої Катерини.</p>
+                <a href="tel:+380631234567" class="btn-black">+380 63 123 45 67</a>
+            </div>
+        </section>
+
+        <section class="wishes" data-aos="fade-up">
+            <img src="gifts.jpg" alt="Квіти" class="gifts-img">
+            <h3>ПОБАЖАННЯ</h3>
+            <p>Ваші посмішки — найкращий подарунок. Щодо квітів: ми будемо раді пляшці вина замість букету.</p>
+            
+            <div class="gorko-block">
+                <div class="gorko-header">
+                    <h3>ГІРКО</h3>
+                    <span class="handwritten-accent red">дуже просимо</span>
+                </div>
+                <p>Просимо утриматися від гучних вигуків «Гірко!». Ми хочемо затишну атмосферу.</p>
+                <img src="gorko.jpg" alt="Стрічка фото" class="strip-img">
+            </div>
+        </section>
+
+        <section class="game-section" data-aos="zoom-in">
+            <h3>ЗНАЙДІТЬ 10 СЛІВ</h3>
+            <span class="handwritten-accent right">в кінці сюрприз</span>
+            
+            <div class="word-grid">
+                Ж Р О В А Н А Р Е Ч Е Н А<br>
+                Ф А Т А Т Ь К П О І Ц А Н<br>
+                Г О І С М Н Л О Б І Т Н И<br>
+                В Б У К Е Т У З І М Ь О К<br>
+                К О Х А Н Н Я В Е С І Л Л<br>
+                Т А Н Е Ц Ь А Л Я К С Р Н
+            </div>
+            <div class="word-list">
+                <span>ВЕСІЛЛЯ</span> <span>НАРЕЧЕНА</span> <span>БУКЕТ</span> <span>КОХАННЯ</span>
+            </div>
+        </section>
+
+        <section class="rsvp-form" data-aos="fade-up">
+            <h3>АНКЕТА</h3>
+            <p>Будь ласка, підтвердьте присутність до 01.09.2025</p>
+
+            <form action="https://formspree.io/f/ВАШ_КОД" method="POST">
+                <label>Прізвище та ім'я</label>
+                <input type="text" name="name" placeholder="Ваше Ім'я" required>
+
+                <label>Чи зможете ви бути присутнім?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="attend" value="yes"> Так, зможу</label>
+                    <label><input type="radio" name="attend" value="later"> Повідомлю пізніше</label>
+                    <label><input type="radio" name="attend" value="no"> Не зможу прийти</label>
+                </div>
+
+                <label>Коментар</label>
+                <input type="text" name="comment" placeholder="Ваш коментар...">
+
+                <button type="submit" class="btn-black">Відправити</button>
+            </form>
+        </section>
+
+        <section class="final-banner" data-aos="fade-up">
+            <div class="image-wrapper">
+                <img src="final-bg.jpg" alt="Ми чекаємо на вас">
+                <p class="overlay-text">
+                    З нетерпінням чекаємо на<br>
+                    Вас у цей важливий день!
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="music-btn" onclick="toggleMusic()">
+        <div class="vinyl" id="vinyl-icon">🎵</div>
+    </div>
+    
+    <audio id="my-audio" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer class="top-bar footer">
+        <span>Видання № 1</span>
+        <span>Субота 11.04.2026 Року</span>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

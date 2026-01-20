@@ -1,0 +1,157 @@
+/* === ОСНОВА === */
+body {
+    background: #fff;
+    font-family: 'Lora', serif;
+    color: #111;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Червоний рукописний шрифт */
+.handwritten-accent {
+    font-family: 'Marck Script', cursive;
+    color: #d13a3a;
+    font-size: 1.5rem;
+    transform: rotate(-5deg);
+    position: absolute;
+    z-index: 2;
+}
+
+.top-bar {
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 0.9rem;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.paper-container { max-width: 900px; margin: 0 auto; padding: 0 15px; }
+
+/* === ГЕРОЙ === */
+.hero { text-align: center; margin-bottom: 40px; position: relative; }
+.hero h2 { font-size: 1.2rem; margin-bottom: 10px; }
+.hero .line { border-bottom: 2px solid #000; margin: 10px 0; }
+.names { font-size: 2.5rem; letter-spacing: 2px; }
+.subtitle { font-size: 1.2rem; margin-bottom: 20px; }
+
+.hero-image-wrapper { position: relative; display: inline-block; width: 100%; }
+.main-img { 
+    width: 100%; height: auto; display: block; 
+    filter: grayscale(100%); transition: filter 0.5s; 
+}
+.main-img:hover { filter: grayscale(0%); }
+.top-right { top: 15%; right: 5%; font-size: 1.8rem; }
+
+/* === ІНТРО ТА ДРЕС-КОД === */
+.intro-grid, .dresscode-grid { display: flex; gap: 30px; margin-bottom: 50px; flex-wrap: wrap; }
+.dresscode-grid { flex-direction: row-reverse; }
+
+.intro-img, .dress-img { flex: 1; min-width: 300px; }
+.intro-img img, .dress-img img { width: 100%; filter: grayscale(100%); transition: filter 0.5s; }
+.intro-img img:hover, .dress-img img:hover { filter: grayscale(0%); }
+
+.intro-text, .dress-text { flex: 1; padding-top: 20px; position: relative; }
+
+/* Кнопки та Локація */
+.location-box { border: 1px solid #000; padding: 20px; margin-top: 30px; text-align: center; }
+.btn-outline, .btn-black {
+    display: inline-block; padding: 12px 25px; margin-top: 15px;
+    border: 1px solid #000; text-decoration: none; color: #000; 
+    text-transform: uppercase; font-family: 'Playfair Display'; transition: 0.3s;
+    cursor: pointer;
+}
+.btn-outline:hover { background: #000; color: #fff; }
+.btn-black { background: #000; color: #fff; border: none; width: 100%; }
+
+/* === ТАЙМЕР === */
+.countdown-section {
+    position: relative; height: 400px; color: white;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    margin-bottom: 50px; overflow: hidden;
+}
+.bg-img { position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; filter: grayscale(100%); z-index: -1; }
+.overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.4); z-index: 0; }
+.countdown-content { z-index: 1; position: relative; }
+#timer { display: flex; gap: 20px; font-size: 1rem; justify-content: center; margin-top: 10px;}
+#timer span { display: block; font-size: 3rem; font-family: 'Playfair Display'; line-height: 1;}
+
+/* === ПРОГРАМА === */
+.timeline-section { position: relative; margin-bottom: 50px; }
+.timeline { border-left: 2px solid #000; margin-left: 20px; padding-left: 30px; margin-top: 30px; }
+.event { margin-bottom: 40px; position: relative; }
+.time-icon { position: absolute; left: -52px; display: flex; flex-direction: column; align-items: center; }
+.icon { background: #fff; padding: 5px; font-size: 1.5rem; }
+.time-icon span { font-weight: bold; font-family: 'Playfair Display'; margin-top: 5px; }
+.left-side { top: 0; right: 0; }
+
+/* === ОРГАНІЗАТОР, ПОБАЖАННЯ, ГІРКО === */
+.wishes, .organizer { text-align: center; margin-bottom: 50px; }
+.gifts-img, .org-banner { width: 100%; max-height: 250px; object-fit: cover; margin-bottom: 20px; filter: grayscale(100%); }
+.org-box { border: 1px solid #ddd; padding: 20px; background: white; width: 90%; margin: -40px auto 0; position: relative; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.gorko-block { border-top: 2px solid #000; border-bottom: 2px solid #000; padding: 20px 0; margin-top: 30px; }
+.gorko-header { position: relative; display: inline-block; margin-bottom: 10px; }
+.gorko-header .red { top: -15px; right: -90px; }
+.strip-img { width: 100%; height: 100px; object-fit: cover; margin-top: 15px; filter: grayscale(100%); }
+
+/* === КРОСВОРД === */
+.game-section { text-align: center; margin-bottom: 50px; position: relative; background: #f9f9f9; padding: 30px 10px; }
+.word-grid { font-family: monospace; letter-spacing: 5px; line-height: 2; font-size: 1.1rem; margin: 20px 0; text-transform: uppercase; overflow-x: auto;}
+.word-list span { margin: 0 10px; font-weight: bold; border-bottom: 1px solid #000; display: inline-block; margin-top: 10px;}
+.right { top: 20px; right: 20px; }
+
+/* === АНКЕТА === */
+.rsvp-form { max-width: 600px; margin: 0 auto 50px; padding: 20px; border: 2px solid #000; }
+.rsvp-form h3 { text-align: center; margin-bottom: 30px; font-size: 2rem; }
+form { display: flex; flex-direction: column; gap: 15px; }
+input[type="text"] { border: none; border-bottom: 1px solid #000; padding: 10px; font-family: 'Lora'; outline: none; background: transparent; font-size: 1rem;}
+.radio-group { display: flex; flex-direction: column; gap: 10px; margin: 10px 0; }
+.palette { display: flex; gap: 10px; margin-top: 20px; }
+.palette span { width: 40px; height: 40px; border-radius: 50%; display: block; border: 1px solid #eee; }
+.bottom-right { bottom: 0; right: 0; }
+
+/* === ФІНАЛЬНИЙ БАНЕР === */
+.final-banner { margin-top: 50px; width: 100%; position: relative; }
+.image-wrapper { position: relative; width: 100%; }
+.image-wrapper img { width: 100%; height: auto; display: block; filter: grayscale(100%); }
+.overlay-text {
+    position: absolute; bottom: 20%; left: 0; width: 100%; text-align: center;
+    font-family: 'Marck Script', cursive; color: #d13a3a;
+    font-size: clamp(1.5rem, 5vw, 3rem); line-height: 1.4;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5); margin: 0; z-index: 10;
+}
+
+/* === МУЗИКА === */
+.music-btn { 
+    position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; 
+    background: #000; border-radius: 50%; display: flex; align-items: center; 
+    justify-content: center; z-index: 100; cursor: pointer; 
+    border: 2px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    transition: transform 0.3s;
+}
+.music-btn:active { transform: scale(0.9); }
+
+.vinyl { 
+    font-size: 24px; 
+    animation: spin 4s linear infinite; 
+    animation-play-state: paused; /* Спочатку стоїть */
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* АДАПТАЦІЯ */
+@media (max-width: 768px) {
+    .intro-grid, .dresscode-grid { flex-direction: column; }
+    .hero .names { font-size: 2rem; }
+    .word-grid { letter-spacing: 2px; font-size: 0.9rem; }
+    .countdown-section { height: 300px; }
+    #timer span { font-size: 2rem; }
+}
